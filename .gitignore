@@ -1,0 +1,25 @@
+# dependencies
+node_modules/
+
+# next.js build output
+.next/
+out/
+
+# local env files — never commit
+.env
+.env.*
+!.env.example
+
+# vercel
+.vercel/
+
+# generated TypeScript / drizzle artifacts
+*.tsbuildinfo
+
+# os / editor noise
+.DS_Store
+Thumbs.db
+
+# local logs
+*.log
+npm-debug.log*

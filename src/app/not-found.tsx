@@ -1,0 +1,5 @@
+import Link from "next/link";
+import { ArrowLeft, Search } from "lucide-react";
+export default function NotFound() {
+  return <main className="container-poster border-x-2 border-b-2 border-ink"><div className="grid min-h-[65vh] lg:grid-cols-12"><div className="flex flex-col justify-center p-7 py-14 lg:col-span-8 lg:border-r-2 lg:border-ink"><p className="mono text-cobalt">ERRO 404 • CAMINHO NÃO ENCONTRADO</p><h1 className="display mt-6 text-[clamp(5rem,12vw,12rem)]">Nada por aqui.</h1><p className="mt-6 max-w-xl text-base text-ink/65">O endereço pode ter mudado ou o projeto não existe nesta versão. Volte ao diretório ou encontre um prompt para começar outra investigação.</p><div className="mt-8 flex flex-wrap gap-3"><Link href="/" className="poster-button bg-ink text-white"><ArrowLeft size={16} aria-hidden="true" />Voltar ao diretório</Link><Link href="/prompts" className="poster-button bg-white"><Search size={16} aria-hidden="true" />Buscar prompts</Link></div></div><div className="bg-cobalt p-7 text-white lg:col-span-4"><p className="display vertical-title text-7xl">REA BRASIL LB</p></div></div></main>;
+}
